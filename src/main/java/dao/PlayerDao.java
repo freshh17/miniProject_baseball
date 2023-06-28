@@ -30,17 +30,19 @@ public class PlayerDao {
         return result;
     }
 
-    public void update(int id){
+    public int update(int id){
+        int result = 0;
         String query = "update player set team_id = null where id = ?";
 
         try {
             PreparedStatement statement = connection.prepareStatement(query);
             statement.setInt(1, id);
 
-            statement.executeUpdate();
+            result = statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return result;
     }
 
     public List<Player> findPlayerListByTeam(int teamId){
