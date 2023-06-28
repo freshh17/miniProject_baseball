@@ -7,7 +7,7 @@ public class DBConnection {
     public static Connection getInstance(){
         String url = "jdbc:mysql://localhost:3306/toyproject2";
         String username = "root";
-        String password = "sch134679";
+        String password = "";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
