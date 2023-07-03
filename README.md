@@ -1,5 +1,4 @@
 # 아구관리 프로그램 (FastCampus BoostCamp Project)
----------------
 # 역할 분담
 1. 김희현
 * 테이블 SQL 설계
